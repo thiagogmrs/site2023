@@ -1,0 +1,55 @@
+.motivos-detalhes-bg{
+    background: var(--color-3);
+}
+.motivos-detalhes{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 50px;
+    padding: 60px 35px;
+}
+@media (max-width: 750px){
+    .motivos-detalhes{
+        grid-template-columns: 1fr;
+    }
+}
+.motivos-items{
+     color: var(--color-4);
+     display: grid;
+     grid-template-rows: auto 1fr;
+     gap: 15px;
+     align-items: start;
+}
+.motivos-items h2{
+    color: var(--color-1);
+    max-width: max-content;
+    font-size: 1.5rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.motivos-items h2::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: var(--color-2);
+    display: flex;
+    position: absolute;
+    left: -20px;
+}
+.bg-orange {
+    background: var(--color-2) !important;
+    color: #fff !important;
+}
+.motivos-items p{
+    line-height: 1.4;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+@media (max-width: 600px){
+    .motivos-items p{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,166 @@
+/*estilos gerais*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul, li, a{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: inherit;
+    border-radius: 5px;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+:root{
+    --font-primary: 'Roboto', sans-serif;
+    --font-secundary: 'Viga', sans-serif;
+    --color-1: #fff;
+    --color-4: #DCDCDC;
+    --color-2: #ff5e00;
+    --color-5: #c94e07;
+    --color-3: #222;
+    --color-6: #333;
+    --space-1: 0.625rem; /*10px*/
+    --space-2: 0.938rem; /*15px*/
+    --space-3: 1.25rem;  /*20px*/
+    --space-4: 1.563rem; /*25px*/
+    --space-5: 1.875rem; /*30px*/
+    --font-1: 1.5rem; 
+    --font-2: 2rem;  
+    --font-3: 2.5rem;  
+    --font-4: 3rem;   
+    --font-mobile: 1rem;
+    --font-mobile-2: 1.4rem;
+    --font-mobile-3: 1.8rem;
+    --font-mobile-4: 2rem;
+} 
+body{
+    font-family: var(--font-primary);
+    color: var(--color-3);
+    background: #333;
+}
+/*btn*/
+.btn{
+    background: var(--color-2);
+    padding: var(--size-2);
+    display: inline-block;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    color: var(--color-1);
+    cursor: pointer;
+}
+.btn:hover{
+    background: var(--color-5);
+}
+.detran{
+    color: var(--color-2);
+    font-weight: 700;
+}
+.ds-flex{
+    display: flex !important;
+}
+.ds-grid{
+    display: grid !important;   
+}
+.span-orange{
+    color: var(--color-2);
+    /* font-weight: 600; */
+}
+.btn-whats{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 99999;
+}
+#btn-mobile{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--size-4);
+    position: fixed;
+    background: var(--color-2);
+    color: var(--color-1);
+    right: 50px;
+    bottom: 150px;
+    display: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    animation: btnAnimar 1s ease;
+    border-radius: 5px;
+}
+@keyframes btnAnimar {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media (max-width: 650px){
+    #btn-mobile{
+        right: 30px;
+        bottom: 30px;
+    }
+  }
+.botao {
+    background: #09a513;
+    color: white;
+    border: 1px solid #09a513;
+    border-radius: 70px;
+    box-shadow: 0 0 0 0 rgba(9, 165, 19, 0.50);
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    text-decoration: none;
+    transition: background, padding 500ms ease-in-out;  
+  }
+  @media (max-width: 650px){
+    .botao{
+        display: none;
+    }
+  }
+  
+  @keyframes alerta {
+    0% {
+      transform: scale();
+    }
+    70% {
+      transform: scale();
+      box-shadow: 0 0 0 50px rgba(69, 152, 27, 0);
+    }
+      100% {
+      transform: scale();
+      box-shadow: 0 0 0 0 rgba(69, 152, 27, 0);
+    }
+  }
+  .animation {
+    animation: alerta 1.5s infinite;
+  }
+  .color-orange{
+    color: var(--color-2);
+  }

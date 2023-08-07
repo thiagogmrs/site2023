@@ -1,0 +1,29 @@
+/*global*/
+@import url(./global/global.css);
+
+/*introdução*/
+@import url(./introducao/introducao.css);
+
+/*planos*/
+@import url(./planos/planos.css);
+
+/*motivos-intro*/
+@import url(./motivos-introducao/motivos-introducao.css);
+
+/*motivos-detalhes*/
+@import url(./motivos-detalhes/motivos-detalhes.css);
+
+/*whatsapp*/
+@import url(./whatsapp/whatsapp.css);
+
+/*depoimentos*/
+@import url(./depoimentos/depoimentos.css);
+
+/*email*/
+@import url(./email/email.css);
+
+/*instagram*/
+@import url(./instagram/instagram.css);
+
+/*footer*/
+@import url(./footer/footer.css);

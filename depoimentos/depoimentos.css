@@ -1,0 +1,25 @@
+.depoimentos-bg{
+  background-color: var(--color-1);
+}
+.depoimentos{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 15px;
+}
+.coments-google{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.coments-google a{
+  background-color: var(--color-2);
+  color: var(--color-1);
+  padding: 5px 10px;
+}
+.coments-google a:hover{
+  background-color: var(--color-5);
+}
+.depoimentos h1{
+  padding: 20px 30px;
+  color: var(--color-6);
+}

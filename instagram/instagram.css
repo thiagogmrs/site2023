@@ -1,0 +1,12 @@
+.instagram-bg{
+    background-color: var(--color-1);
+}
+.instagram-posts-contain{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 15px;
+}
+.instagram-posts-contain h1{
+    padding: 20px 15px;
+    color: var(--color-6);
+}
