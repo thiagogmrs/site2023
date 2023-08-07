@@ -36,7 +36,6 @@ function desk(){
 const menuHamburguer = document.querySelector('[data-menu="hamburguer"]');
 let show = document.querySelector('[data-menu="show"]');
 const menuLinks = document.querySelectorAll('.menu-introducao a');
-console.log(menuLinks);
 
 function showMenu(){
    show.classList.toggle('ds-flex');
@@ -48,13 +47,9 @@ menuHamburguer.addEventListener('click', showMenu);
 
 menuLinks.forEach((item) =>{
    item.addEventListener('click', remover);
-   console.log(item);
 });     
 
 function remover(){
   show.classList.remove('ds-flex');
   menuHamburguer.checked = false;     
 }
-
-//instagram posts
-(function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); 
