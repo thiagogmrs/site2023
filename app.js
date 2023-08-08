@@ -53,3 +53,19 @@ function remover(){
   show.classList.remove('ds-flex');
   menuHamburguer.checked = false;     
 }
+const tituloAcordion = document.querySelectorAll('.dl-contain dt');
+const contentAcordion = document.querySelectorAll('.dl-contain dd')
+contentAcordion[0].classList.add('ativo');
+
+tituloAcordion.forEach((titulo, index) =>{
+  titulo.addEventListener('click', ()=>{
+    openContent(index);
+  })
+})
+
+function openContent(index){
+  contentAcordion.forEach((contentItem) =>{
+    contentItem.classList.remove('ativo');
+  });
+  contentAcordion[index].classList.add('ativo');
+};
