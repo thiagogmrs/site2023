@@ -206,3 +206,49 @@
     height: 600px;
     width: 100%;
 }
+.faq-list{
+    background: var(--color-1);
+}
+.faq-list-contain{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 15px;
+}
+.dl-contain dt{ 
+    margin-bottom: 5px;
+    color: var(--color-3);
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+.dl-contain dt:before{
+    content: '';
+    width: 10px;
+    height: 5px;
+    background: var(--color-2);
+    position: absolute;
+    top: 5px;
+    left: -15px;
+}
+.dl-contain dt:after{
+    content: '↰';
+    width: 10px;
+    height: 10px;
+    display: block;
+}
+.dl-contain dd{
+    background: #f5f5f5;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: none;
+    padding: 20px 15px;
+}
+.dl-contain dd strong{
+    font-style: italic;
+}
+.dl-contain dd.ativo{
+    display: block;
+}
+
