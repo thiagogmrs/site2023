@@ -1,0 +1,66 @@
+.header-wp{
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 8px 15px;
+    
+    color: #fff;
+
+    font-size: 13px;
+
+}
+
+.header-wp a{
+
+    color: var(--color-1);
+
+    font-size: 13px;
+
+}
+
+.header-wp a:hover{
+
+    color: #c3c3c3;
+
+}
+
+.link-site{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+.link-site img{
+
+    max-width: 18px;
+
+}
+
+.sessao-recurso-contain{
+
+    background: var(--color-3);
+
+}
+
+@media (max-width: 1150px){
+
+    .sessao-recurso-contain{
+
+     display: none;
+
+    }
+
+}
+
