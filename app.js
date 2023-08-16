@@ -5,28 +5,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     btnmobile.style.display = "flex";
-    const tempo_intervalo = 4; //ms -> define a velocidade da animação
-    const tempo = 2000; //ms -> define o tempo total da animaçao
-
-  $('.counter-up').each(function() {  
-  let count_to = parseInt($(this).data('countTo'));
-  let intervalos = tempo / tempo_intervalo; //quantos passos de animação tem
-  let incremento = count_to / intervalos; //quanto cada contador deve aumentar
-  let valor = 0;
-  let el = $(this);
-  
-  let timer = setInterval(function() {
-    if (valor >= count_to){ //se já contou tudo tem de parar o timer
-      valor = count_to;
-      clearInterval(timer);
-    }
     
-    let texto = valor.toFixed(0).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
-    el.text(texto);
-    valor += incremento;      
-  }, tempo_intervalo);
-});
-  
   } else {
     btnmobile.style.display = "none"; 
   }

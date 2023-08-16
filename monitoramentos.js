@@ -15,12 +15,20 @@ function openContent(index){
   contentAcordion[index].classList.add('ativo');
 };
 
-//JSnumbers
 
-const tempo_intervalo = 4; //ms -> define a velocidade da animação
-const tempo = 2000; //ms -> define o tempo total da animaçao
 
-$('.counter-up').each(function() {  
+const scrollNumbers = window;
+
+scrollNumbers.addEventListener('scroll', fnumbers);
+
+function fnumbers(){
+  const scrollNumbersFunction = window.pageYOffset;
+  console.log(scrollNumbersFunction)
+  if(scrollNumbersFunction >= 450 && scrollNumbersFunction <= 550){
+    const tempo_intervalo = 2; //ms -> define a velocidade da animação
+    const tempo = 2000; //ms -> define o tempo total da animaçao
+
+  $('.counter-up').each(function() {  
   let count_to = parseInt($(this).data('countTo'));
   let intervalos = tempo / tempo_intervalo; //quantos passos de animação tem
   let incremento = count_to / intervalos; //quanto cada contador deve aumentar
@@ -39,3 +47,9 @@ $('.counter-up').each(function() {
   }, tempo_intervalo);
 });
   
+    
+  }
+}
+//JSnumbers
+
+
